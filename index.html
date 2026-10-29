@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectHub - Web 2.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>ConnectHub</h1>
+        <p>Share ideas. Connect people. Build community.</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#create">Create Post</a>
+        <a href="#feed">Community Feed</a>
+    </nav>
+
+    <main class="container" id="home">
+
+        <section class="welcome">
+            <h2>Welcome to ConnectHub!</h2>
+            <p>A Web 2.0 community where everyone can share their thoughts.</p>
+        </section>
+
+        <section class="post-form" id="create">
+            <h2>Create a Post</h2>
+
+            <form id="postForm">
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <textarea
+                    id="postContent"
+                    placeholder="What's on your mind?"
+                    rows="4"
+                    required
+                ></textarea>
+
+                <button type="submit">Publish Post</button>
+            </form>
+        </section>
+
+        <section id="feed">
+            <h2>Community Feed</h2>
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search posts..."
+            >
+
+            <div id="postsContainer"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 ConnectHub | Web 2.0 Website Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
